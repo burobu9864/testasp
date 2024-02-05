@@ -1,0 +1,55 @@
+@charset "UTF-8";
+.contact_input_form{
+	padding: 5px;
+}
+.form-group{
+	align-items: center;
+}
+
+.form-group span.badge{
+	display: inline-block;
+	margin-left: 5px;
+	vertical-align: text-top;
+}
+.mail_send_erea{
+	display: flex;
+	justify-content: space-between;
+}
+.mail_sent_erea{
+	display: flex;
+	justify-content: center;
+}
+.col-form-label{
+	font-weight: bold;
+}
+.attention_p{
+	font-size: 14px;
+	padding: 15px;
+	border: 1px solid #044385;
+	border-radius: .25rem;
+	background: #ffffff;
+	color: #033972;
+	font-weight: bold;
+}
+.error01{
+	padding-left: 8px;
+}
+.error02{
+	border: 2px solid #dc3545;
+	background: #fff8f7;
+}
+/****レスポンシブcss*****/
+
+@media screen and (max-width: 767px){
+
+.sp_view {
+	display: block;
+}
+.pc_view {
+	display:none;
+}
+
+
+}
+
+

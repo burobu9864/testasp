@@ -1,6 +1,6 @@
 <?php
 
-class Controller_Client_Top extends Controller
+class Controller_Client_Main extends Controller
 {
     public function action_index()
     {

@@ -3,7 +3,7 @@ class Controller_Start extends Controller
 {
     function action_index()
     {
-        Response::redirect('client');
+        Response::redirect('top');
     }
     // public function action_404()
     // {
