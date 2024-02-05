@@ -11,6 +11,7 @@ return [
     'system/(:any)'         => 'system/$1',
     ':accounttype/login'    => 'member/login',
     ':accounttype/logout'   => 'member/logout',
+    'advertiser/(:any)'     => 'advertiser/$1',
     'sponsor/(:any)'        => 'sponsor/$1',
     'agency/(:any)'         => 'sponsor/$1',
     'media/(:any)'          => 'media/$1',
