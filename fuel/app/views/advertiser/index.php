@@ -46,9 +46,12 @@
     <div class="tab-content">
         <div class="tab-pane fade show active" id="tab1">
             <!-- Content for Tab 1 -->
+            <h2>Content for Tab 1</h2>
+            <p>This is the content for Tab 1.</p>
         </div>
         <div class="tab-pane fade" id="tab2">
-            <!-- Content for Tab 2 -->
+            <h2>Content for Tab 2</h2>
+            <p>This is the content for Tab 2.</p>
         </div>
         <!-- Add more tab content if needed -->
     </div>

@@ -12,7 +12,7 @@ return [
     'system/login'          => 'login/system',
     'admin/(:any)'          => 'admin/$1',
     'admin'                 => 'admin',
-    'system'                => 'system',
+    'system'                => 'system/index',
     'system/(:any)'         => 'system/$1',
     ':accounttype/login'    => 'member/login',
     ':accounttype/logout'   => 'member/logout',
