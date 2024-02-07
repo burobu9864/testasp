@@ -1,432 +1,79 @@
 @charset "UTF-8";
 
-body{
-	margin: 0;
-	font-size: 16px;
-	line-height: 1.6;
-	font-family:"游ゴシック", YuGothic,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-	overflow-wrap: break-word;
-	background-image:url(/img/pc_body_bg.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-.footerFixed{
-	min-height: 100vh; /* ←コンテンツの高さの最小値＝ブラウザの高さに指定 */
-	position: relative;/* ←相対位置 */
-	padding-bottom: 60px; /* ←フッターの高さを指定 */
-	box-sizing: border-box;
-	/* ↑ヘッダーやフッターを含むすべての要素の高さ＝min-height:100vhになるように指定 */
-	display: flex;
-	justify-content: center;
+body {
+    background-color: #f8f9fa; /* ページ全体の背景色 */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.left{float: left;}
-.right{float: right;}
-
-.cFix:after {
-display: block;
-clear: both;
-content: "";
-}
-.sp_view {
-	  display: none;
-}
-.pc_view {
-	 display:block;
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* コンテンツの背景色 */
+    border-radius: 10px; /* コンテンツの角丸 */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* 影の追加 */
 }
 
-ul,li{
-	list-style: none;
-	padding: 0 0 ;
-	margin:0;
-}
-h1{
-	font-size: 30px;
-}
-h3{
-	font-size: 32px;
-	padding:2% 0 2% 2%;
-	margin-top: 60px;
-	font-weight: bold;
-	background: #003c7b;
-	color: #fff;
-}
-img{
-	width: 100%;
+.footerFixed {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40; /* フッターの背景色 */
+    color: #fff; /* フッターのテキスト色 */
 }
 
-.container{
-	max-width: 1000px;
+.footerFixed a {
+    color: #fff; /* リンクの色 */
+    text-decoration: none;
+    margin: 0 10px;
 }
 
-/*-----------logo------------*/
-
-.logo_erea{
-	text-align: center;
-}
-.logo_erea img{
-	max-width: 280px;
-	padding-top: 8%;
-	display: block;
-	margin: auto;
-	padding-right:15px;
+.footerFixed a:hover {
+    color: #ccc; /* リンクのホバー時の色 */
 }
 
-/*-----------maine_erea------------*/
-.maine_erea{
-	display: flex;
-	justify-content: center;
-	padding-top: 5%;
-
-
-}
-.maine_text{
-	width: 350px;
-	text-align: justify;
-	font-weight: bold;
-	margin: 0 20px;
-
-}
-.maine_text p{
-	text-shadow: 0 0 4px #f9f9f9;
-}
-.maine_btn_erea{
-	text-align: center;
-	display: grid;
-	align-content: center;
-	padding-bottom: 20px;
-	margin: 0 20px;
-}
-.maine_btn_erea p{
-	font-weight: bold;
-	font-size: 24px;
-	margin: 0;
-}
-.maine_btn_erea a{
-	color: #222;
-
-}
-
-.maine_btn_erea a.btn{
-	display: block;
-	padding: 20px;
-	background: #0a396b;
-	color: #fff;
-	margin: 15px;
-	width: 300px;
-	border-radius: 100px;
-	box-shadow: 1px 2px 2px 0px #d7dae4;
-	transition: all .3s;
-}
-.maine_btn_erea a.btn:hover {
-color: #fff;
-background-color: #cc283d;
-}
-
-.maine_btn_erea a.contact_link{
-	padding-top: 10%;
-}
-
-/*-----------glass------------*/
-
-.glass{
-	background: #ffffff52;
-	padding: 50px;
-	border: 1px solid #fff;
-	border-radius: 10px;
-backdrop-filter: blur(3px);
-box-shadow: 0px 6px 12px 0px rgb(168 168 169 / 35%);
-}
-.glass h2{
-	padding: 0 15px 15px;
-	font-weight: bold;
-	font-size: 18px;
-}
-.glass_footer{
-	padding: 20px 0 0;
-	margin-top: 30px;
-	border-top: 1px solid #607d8b;
-}
-/*-----------terms------------*/
-
-
-.partner-terms_erea{
-	display: flex;
-	justify-content: center;
-	padding-top: 5%;
-	margin-bottom: 50px;
-
-
-}
-.partner-terms_text{
-	max-width: 650px;
-	height: 450px;
-	text-align: justify;
-	font-weight: bold;
-	overflow-x: hidden;
-	overflow-y: scroll;
-}
-
-.partner-terms_text pre{
-	padding: 0px 25px 0px 15px;
-	font-size: 14px;
-	font-weight: normal;
-	text-shadow: 0 0 5px white;
-}
-pre{white-space: pre-wrap;}
-
-
-.partner-terms_text::-webkit-scrollbar{
-width: 4px;
-height: 5px;
-}
-.partner-terms_text::-webkit-scrollbar-track{
-border-radius: 5px;
-}
-.partner-terms_text::-webkit-scrollbar-thumb{
-background: #033972;
-border-radius: 5px;
-}
-
-
-/*-----------privacypolicy------------*/
-
-.privacypolicy_erea{
-	display: flex;
-	justify-content: center;
-	padding-top: 5%;
-	margin-bottom: 50px;
-}
-h2 span{
-	font-size: 80%;
-}
-
-.privacypolicy_text{
-	max-width: 650px;
-	text-align: justify;
-	font-weight: bold;
-	margin-bottom: 20px;
-	/*overflow-x: hidden;
-	overflow-y: scroll;  */
-}
-
-.privacypolicy_text p,.privacypolicy_text ul,.privacypolicy_text ol{
-	padding: 0px 25px 0px 15px;
-	font-size: 14px;
-	font-weight: normal;
-	text-shadow: 0 0 5px white;
-}
-.privacypolicy_text ul,.privacypolicy_text ol{
-	padding-left:30px;
-}
-.privacypolicy_text ul li{
-	list-style: disc;
-	margin-bottom: 13px;
-}
-.privacypolicy_text ol li{
-	list-style: decimal;
-	margin-bottom: 13px;
-}
-.privacypolicy_text ol ol li {
-	list-style: none;
-}
-
-.privacypolicy_text .cookie_table{
-	margin-top: 20px;
-	font-size: 80%;
-	table-layout: fixed;
-}
-
-.privacypolicy_text::-webkit-scrollbar{
-width: 4px;
-height: 5px;
-}
-.privacypolicy_text::-webkit-scrollbar-track{
-border-radius: 5px;
-}
-.privacypolicy_text::-webkit-scrollbar-thumb{
-background: #033972;
-border-radius: 5px;
-}
-
-/*-----------contact_top----------------*/
-.contact_top_erea{
-	max-width: 800px;
-	padding-top: 5%;
-	margin: 0 auto 50px;
-}
-.contact_top_erea .glass h2{
-	text-align: center;
-	padding-bottom: 20px;
-	margin-bottom: 30px;
-	border-bottom: 1px solid #607d8b;
-}
-
-.contact_top_erea .btn{
-	border-radius:50px ;
-	font-size: 16px;
-	height: 60px;
-	line-height: 1.2;
-}
-.contact_top_erea .btn-outline-denger{
-	color:#E9573F;
-	border-color: #E9573F;
-}
-.contact_top_erea .btn-outline-denger:hover{
-	color: #fff;
-	background-color: #E9573F;
-	border-color: #E9573F;
-}
-.contact_top_erea .form-group{
-	margin-bottom: 0;
-}
-.contact_top_erea .col-sm-6{
-	margin-bottom: 20px;
-}
-
-/*-----------contact_input----------------*/
-
-.contact_input_erea{
-	max-width: 800px;
-	padding-top: 5%;
-	margin: 0 auto 50px;
-}
-.contact_input_erea .glass h2{
-	text-align: center;
-	padding-bottom: 20px;
-	margin-bottom: 30px;
-	border-bottom: 1px solid #607d8b;
-}
-
-
-
-/*-----------footer------------*/
-
-footer{
-	position: absolute;/* ←絶対位置 */
-	bottom: 0;
-	display: flex;
-	justify-content:space-evenly;
-
-
-}
-footer a{
-	margin-bottom: 5px;
-	display: inline-block;
-	color: #000;
-	padding-right: 15px;
-}
-footer small a{
-	padding-right: 5px;
-
-}
-
-
-
-/****レスポンシブcss*****/
-
-@media screen and (max-width: 767px){
-
-.sp_view {
-	  display: block;
-}
-.pc_view {
-	 display:none;
-}
-.footerFixed{
-	padding-bottom: 100px;
-}
-
-body{
-	background-image:url(/img/sp_body_bg.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-.logo_erea img{
-	max-width: 180px;
-	margin: auto;
-	padding-right: 10px;
-}
-/*-----------maine_erea------------*/
 .maine_erea {
-	display: grid;
-	justify-content: center;
-	padding-top: 10%;
+    padding: 20px;
 }
+
 .maine_text {
-	width: auto;
-}
-.maine_btn_erea{
-	padding: 40px 0;
-}
-.maine_btn_erea a.btn{
-	width: auto;
-	margin: 15px 0;
+    margin-bottom: 20px;
 }
 
-/*-----------glass------------*/
-
-
-.glass h2{
-	padding: 0px 5px 5px;
-	font-weight: bold;
-	font-size: 18px;
+.maine_btn_erea {
+    text-align: center;
 }
 
-/*-----------terms------------*/
-.glass{
-	padding: 30px 20px;
-}
-.partner-terms_erea{
-	margin-bottom: 20px;
-}
-.partner-terms_text p{
-	padding: 0px 8px 0px 5px;
-}
-.partner-terms_text{
-	height: auto;
-	overflow-x: none;
-	overflow-y: noen;
+.maine_btn_erea .btn {
+    margin-right: 10px;
+    background-color: #007bff; /* ボタンの背景色 */
+    color: #fff; /* ボタンのテキスト色 */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* ボタンの角丸 */
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.partner-terms_text pre{
-	padding: 0px 5px 0px 5px;
-
+.maine_btn_erea .btn:hover {
+    background-color: #0056b3; /* ボタンのホバー時の背景色 */
 }
 
-/*-----------privacypolicy------------*/
-.privacypolicy_erea{
-margin-bottom: 20px;
-}
-.privacypolicy_text p,.privacypolicy_text ul{
-	  padding: 0px 8px 0px 5px;
-}
-.privacypolicy_text ul,.privacypolicy_text ol{
-	padding-left:20px;
-	padding-right: 10px;
+.contact_link {
+    display: block;
+    margin-top: 20px;
+    color: #007bff; /* お問い合わせリンクの色 */
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/*-----------contact_input------------*/
-.contact_input_erea{
-	margin-bottom: 20px;
+.contact_link:hover {
+    text-decoration: underline;
 }
 
-/*-----------footer------------*/
-
-footer.container{
-display: block;
-padding:5px;
-
-}
-footer p{
-	margin-bottom: 5px;
-	line-height: 1;
-	display: inline-block;
-}
-footer small{
-	display: inline-block;
-}
-footer a{
-	padding-right: 8px;
-}
+footer {
+    margin-top: 20px;
+    color: #ccc; /* フッターのテキスト色 */
 }
