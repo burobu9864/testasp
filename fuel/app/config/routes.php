@@ -5,6 +5,7 @@ return [
     'check'                 => 'check',
     'top'                   => 'top/index',
     'client'                => 'client/main/index',
+    'advertiser/regist'     => 'advertiser/regist',
     'advertiser/login'      => 'login/advertiser',
     'advertiser'            => 'advertiser/index',
     'media/login'           => 'login/media',

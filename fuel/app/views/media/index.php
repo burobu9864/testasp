@@ -27,7 +27,7 @@
             <a class="nav-link active" href="#tab1">HOME</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#tab2">レポート</a>
+            <a class="nav-link" href="#tab2">アフィリエイトレポート</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#tab3">広告取得</a>

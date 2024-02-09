@@ -21,5 +21,22 @@
  */
 
 return array(
+    'default' => array(
+        'type'        => 'mysqli',
+        'connection'  => array(
+            'hostname'   => 'localhost',
+            'database'   => 'testasp',
+            'username'   => 'root',
+            'password'   => 'root',
+            'persistent' => false,
+            'compress'   => false,
+        ),
+        'identifier'   => '`',
+        'table_prefix' => '',
+        'charset'      => 'utf8',
+        'enable_cache' => true,
+        'profiling'    => false,
+        'readonly'     => false,
+    ),
 
 );
