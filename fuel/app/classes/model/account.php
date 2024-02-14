@@ -16,5 +16,6 @@ class Model_Account extends \Orm\Model
         'fax',
         'insert_time',
         'update_time',
+        'staff',
     );
 }
