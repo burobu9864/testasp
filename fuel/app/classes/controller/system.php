@@ -1,6 +1,7 @@
 <?php
 
-class Controller_System extends Controller {
+class Controller_System extends Controller
+{
 
     public function action_index()
     {

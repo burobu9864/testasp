@@ -10,7 +10,8 @@
                 <div class="maine_btn_erea">
                     <a class="btn" href="advertiser/login" target="_blank"> クライアント（広告主）様</a>
                     <a class="btn" href="media/login" target="_blank"> パートナー（掲載媒体）様</a>
-                    <a class="contact_link" href="https://www.felmat.net/service/inquiry" target="_blank"><b>お問い合わせ</b></a>
+                    <a class="contact_link" href="https://www.felmat.net/service/inquiry"
+                        target="_blank"><b>お問い合わせ</b></a>
                 </div>
             </div>
         </div>
@@ -21,7 +22,8 @@
                 <a href="https://www.felmat.net/service/privacypolicy" target="_blank">プライバシー&Cookie
                     ポリシー</a>
             </p>
-            <p><small style="font-size: 100%;">&copy;<a href="https://arush.jp/" target="lombard">2021 A Rush All rights reserved</small></p>
+            <p><small style="font-size: 100%;">&copy;<a href="https://arush.jp/" target="lombard">2021 A Rush All rights
+                        reserved</small></p>
         </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
