@@ -1,8 +1,3 @@
-<?php echo View::forge('advertiser/header'); ?>
-
-<body>
-    <h2>広告主</h2>
-
 <ul class="nav nav-tabs">
     <li class="nav-item"><a class="nav-link active" href="#home">HOME</a></li>
     <li class="nav-item"><a class="nav-link" href="#report">アフィリエイトレポート</a></li>
@@ -24,8 +19,3 @@
         <?php echo View::forge('advertiser/regist/index', ['account' => $account]); ?>
     </div>
 </div>
-
-    <?php echo View::forge('advertiser/footer'); ?>
-</body>
-
-</html>
