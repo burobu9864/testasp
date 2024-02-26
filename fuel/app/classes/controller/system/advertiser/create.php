@@ -4,16 +4,15 @@ class Controller_System_Advertiser_Create extends Controller
 {
     public function action_index()
     {
-        // 何かしらのデータをビューに渡す場合
-        $data = array(
-            'name' => 'John Doe',
-            'age' => 25,
-        );
+        
+        $data['account'] = Model_Account::find(1);
+        return Response::forge(View::forge('system/advertisers/create', $data));
+    }
 
-        // ビューを読み込み、データを渡す
-        $view = View::forge('top/index', $data);
-
-        // レスポンスとしてビューを返す
-        return $view;
+    public function action_create() {
+        // テーブルに表示するデータを取得する例
+        // $data['items'] = Model_Item::find('all');
+        $data['account'] = Model_Account::find(1);
+        return Response::forge(View::forge('system/advertisers/create', $data));
     }
 }

@@ -39,20 +39,6 @@
         </div>
         <!-- Add more tab content if needed -->
     </div>
-    <ul id="dashboard-menu" class="nav nav-list">
-        <li><a href="https://admin.octopuspop.com/system/sponsor/notice/"><i
-                    class="icon-bullhorn"></i><span>通知</span><span class="badge badge-info">9281</span></a></li>
-        <li><a href="https://admin.octopuspop.com/system/sponsor/news/"><i
-                    class="icon-info-sign"></i><span>ニュース</span></a></li>
-        <li><a href="https://admin.octopuspop.com/system/sponsor/show"><i class="icon-group"></i>
-                <span>広告主/代理店</span></a></li>
-        <li><a href="https://admin.octopuspop.com/system/sponsor/campaign"><i class="icon-list-alt"></i>
-                <span>キャンペーン</span></a>
-        </li>
-        <li class="active"><a href="https://admin.octopuspop.com/system/sponsor/ad"><i
-                    class="icon-signal"></i><span>広告</span></a></li>
-        <!-- メディアアカウントのみ、メニューに 「利用規約」を表示する -->
-    </ul>
     <?php echo View::forge('advertiser/footer'); ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>

@@ -9,10 +9,11 @@ class Controller_Advertiser extends Controller
         return View::forge('advertiser/index', $data);
     }
 
-    public function action_regist() {
+    public function action_create() {
         // テーブルに表示するデータを取得する例
         // $data['items'] = Model_Item::find('all');
-        return Response::forge(View::forge('advertiser/regist'));
+        $data['account'] = Model_Account::find(1);
+        return Response::forge(View::forge('system/advertisers/create', $data));
     }
 
 }
