@@ -2,6 +2,13 @@
 
 class Controller_System_Advertisers extends Controller
 {
+    public function before()
+    {
+        parent::before();
+
+        Lang::load('system');
+    }
+
     public function action_create()
     {
         

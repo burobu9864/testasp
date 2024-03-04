@@ -5,14 +5,14 @@
         <?php echo View::forge('system/tabmenu'); ?>
 
         <table class="table table-bordered">
-            <tr><td>サイトID</td><td><?php echo $account->id; ?></td></tr>
-            <tr><td>※メールアドレス</td><td><input type="text" name="example_input" value="<?php echo $account->mail; ?>"></td></tr>
-            <tr><td>※サイト名</td><td><input type="text" name="example_input" value="<?php echo $account->name; ?>"></td></tr>
-            <tr><td>サイト属性</td><td><select name="example_input"><option value="">SNS</option><option value="">ウェブサイト</option></select></td></tr>
-            <tr><td>SNS</td><td><select name="example_input"><option value="">X、Instagram、Facebook、TikTok、YOUTUBE、ニコニコ動画、その他</option></select></td></tr>
-            <tr><td>アイコン登録</td><td><button type="button" class="btn btn-success">アップロード</button></td></tr>
+            <tr><td><?php echo __('sites.label.id'); ?></td><td><?php echo $account->id; ?></td></tr>
+            <tr><td><?php echo __('sites.label.mail'); ?></td><td><input type="text" name="example_input" value="<?php echo $account->mail; ?>"></td></tr>
+            <tr><td><?php echo __('sites.label.name'); ?></td><td><input type="text" name="example_input" value="<?php echo $account->name; ?>"></td></tr>
+            <tr><td><?php echo __('sites.label.site_attr'); ?></td><td><select name="example_input"><option value="">SNS</option><option value="">ウェブサイト</option></select></td></tr>
+            <tr><td><?php echo __('sites.label.sns'); ?></td><td><select name="example_input"><option value="">X、Instagram、Facebook、TikTok、YOUTUBE、ニコニコ動画、その他</option></select></td></tr>
+            <tr><td><?php echo __('sites.label.icon'); ?></td><td><button type="button" class="btn btn-success">アップロード</button></td></tr>
             <tr>
-                <td>カテゴリー</td>
+                <td><?php echo __('sites.label.category'); ?></td>
                 <td>
                     <div class="container">
                         <div class="row">
@@ -36,8 +36,8 @@
                     </div>
                 </td>
             </tr>
-            <tr><td>ポストバック変数名</td><td><input type="text" name="example_input" value="<?php echo $account->name; ?>"></td></tr>
-            <tr><td>ポストバックURL</td><td><input type="text" name="example_input" value="<?php echo $account->name; ?>"></td></tr>
+            <tr><td><?php echo __('sites.label.postback_variable'); ?></td><td><input type="text" name="example_input" value="<?php echo $account->name; ?>"></td></tr>
+            <tr><td><?php echo __('sites.label.postback_url'); ?></td><td><input type="text" name="example_input" value="<?php echo $account->name; ?>"></td></tr>
         </table>
         <div class="form-group">
             <button class="btn btn-primary" name="submit">保存</button>

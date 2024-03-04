@@ -1,29 +1,19 @@
 <?php
 
 return array(
-    // 共通
-    'word_id' => 'ID',
-
-    // メニュー
-    'menu' => array(
-        'advertiser' => array(
-            'list' => '広告主一覧',
-
+    'regist' => array(
+        'label' => array(
+            'id'                => '広告主ID',
+            'mail'              => '※メールアドレス',
+            'password'          => '※パスワード',
+            'rep'               => '※代理店',
+            'name'              => '※会社名',
+            'post_code'         => '郵便番号',
+            'address'           => '住所',
+            'your_staff'        => '担当者名',
+            'tel'               => '電話番号',
+            'our_staff'         => '営業スタッフ',
         ),
+    ),
 
-        'media' => array(
-            'list' => 'メディア一覧',
-
-        ),
-
-        'ad' => array(
-            'list' => '広告一覧',
-
-        ),
-
-        'site' => array(
-            'list' => 'サイト一覧',
-
-        ),
-    )
 );

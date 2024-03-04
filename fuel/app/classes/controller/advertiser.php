@@ -2,6 +2,12 @@
 
 class Controller_Advertiser extends Controller
 {
+    public function before()
+    {
+        parent::before();
+
+        Lang::load('advertiser');
+    }
 
     public function action_index() {
         // idが1のデータを取得

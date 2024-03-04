@@ -56,7 +56,7 @@ return array(
 
 	'index_file' => false,
 
-	// 'profiling' => false,
+	'profiling' => true,
 
 	/**
 	 * -------------------------------------------------------------------------
@@ -65,6 +65,9 @@ return array(
 	 */
 
 	// 'cache_dir' => APPPATH.'cache/',
+
+	'language_fallback' => 'ja',
+    'locale' => 'ja_JP.UTF-8',
 
 	/**
 	 * -------------------------------------------------------------------------
@@ -142,7 +145,10 @@ return array(
 	 *  The default language.
 	 */
 
-	// 'language' => 'en',
+	'language' => 'jp',
+	'language_paths' => array(
+		APPPATH.'lang'.DS,
+	),
 
 	/**
 	 *  Fallback language when file isn't available for default language.
@@ -531,6 +537,6 @@ return array(
 		 * ---------------------------------------------------------------------
 		 */
 
-		// 'language' => array(),
+		'language' => array(),
 	),
 );

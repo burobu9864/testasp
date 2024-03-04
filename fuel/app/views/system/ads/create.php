@@ -5,13 +5,13 @@
         <?php echo View::forge('system/tabmenu'); ?>
 
         <table class="table table-bordered">
-            <tr><td>広告ID</td><td><?php echo $account->id; ?></td></tr>
-            <tr><td>※広告名</td><td><input type="text" name="example_input" value="<?php echo $account->name; ?>"></td></tr>
-            <tr><td>ステータス</td><td><select name="example_input"><option value="">ON</option><option value="">OFF</option></select></td></tr>
-            <tr><td>広告主</td><td><select name="example_input"><option value="">[1]テスト広告者]</option></select></td></tr>
-            <tr><td>デバイス</td><td><select name="example_input"><option value="">SP、PC、SPPC</option></select></td></tr>
+            <tr><td><?= Form::label(__('ads.label.id'), 'id', ['class' => 'control-label']); ?></td><td><?php echo $account->id; ?></td></tr>
+            <tr><td><?php echo __('ads.label.name'); ?></td><td><input type="text" name="example_input" value="<?php echo $account->name; ?>"></td></tr>
+            <tr><td><?php echo __('ads.label.status'); ?></td><td><select name="example_input"><option value="">ON</option><option value="">OFF</option></select></td></tr>
+            <tr><td><?php echo __('ads.label.advertiser_name'); ?></td><td><select name="example_input"><option value="">[1]テスト広告者]</option></select></td></tr>
+            <tr><td><?php echo __('ads.label.device'); ?></td><td><select name="example_input"><option value="">SP、PC、SPPC</option></select></td></tr>
             <tr>
-                <td>広告ジャンル</td>
+                <td><?php echo __('ads.label.ad_genre'); ?></td>
                 <td>
                     <div class="container">
                         <div class="row">
@@ -36,7 +36,7 @@
                 </td>
             </tr>
             <tr>
-                <td>表示メディア</td>
+                <td><?php echo __('ads.label.display_media'); ?></td>
                 <td>
                     <div class="container">
                         <div class="row">
@@ -60,15 +60,15 @@
                     </div>
                 </td>
             </tr>
-            <tr><td>配信URL_PC</td><td><input type="text" name="example_input" value=""></td></tr>
-            <tr><td>配信URL_SP</td><td><input type="text" name="example_input" value=""></td></tr>
-            <tr><td>配信期間</td><td><input type="text" name="example_input" value="2024-01-01 00:00:00 ~ 2030-12-31-23:59:59"></td></tr>
-            <tr><td>パートナー承認</td><td><select name="example_input"><option value="">自動</option><option value="">手動</option></select></td></tr>
-            <tr><td>成果承認</td><td><select name="example_input"><option value="">自動</option><option value="">手動</option></select>※『手動』の場合、60日の間に承認作業が行われないと成果は自動承認されます。</td></tr>
-            <tr><td>成果IP制限</td><td><input type="text" name="example_input" value=""></td></tr>
-            <tr><td>リファラー収集</td><td><select name="example_input"><option value="">無効</option><option value="">収集</option></select></td></tr>
+            <tr><td><?php echo __('ads.label.deliver_url_pc'); ?></td><td><input type="text" name="example_input" value=""></td></tr>
+            <tr><td><?php echo __('ads.label.deliver_url_sp'); ?></td><td><input type="text" name="example_input" value=""></td></tr>
+            <tr><td><?php echo __('ads.label.deliver_term'); ?><</td><td><input type="text" name="example_input" value="2024-01-01 00:00:00 ~ 2030-12-31-23:59:59"></td></tr>
+            <tr><td><?php echo __('ads.label.partner_approval'); ?></td><td><select name="example_input"><option value="">自動</option><option value="">手動</option></select></td></tr>
+            <tr><td><?php echo __('ads.label.result_approval'); ?></td><td><select name="example_input"><option value="">自動</option><option value="">手動</option></select>※『手動』の場合、60日の間に承認作業が行われないと成果は自動承認されます。</td></tr>
+            <tr><td><?php echo __('ads.label.ip_restrect'); ?></td><td><input type="text" name="example_input" value=""></td></tr>
+            <tr><td><?php echo __('ads.label.referrer'); ?></td><td><select name="example_input"><option value="">無効</option><option value="">収集</option></select></td></tr>
             <tr>
-                <td>成果ポイント①</td>
+                <td><?php echo __('ads.label.result_point1'); ?></td>
                 <td>
                     <div class="container">
                         <div class="row">
@@ -101,7 +101,7 @@
                 </td>
             </tr>
             <tr>
-                <td>成果ポイント②</td>
+                <td><?php echo __('ads.label.result_point2'); ?></td>
                 <td>
                     <div class="container">
                         <div class="row">
@@ -117,17 +117,34 @@
                     </div>
                 </td>
             </tr>
-            <tr><td>複数成果</td><td><select name="example_input"><option value="">不可</option><option value="">可</option></select></td></tr>
-            <tr><td>成果ポイント①上限</td><td><input type="text" name="example_input" value=""></td></tr>
-            <tr><td>成果ポイント②上限</td><td><input type="text" name="example_input" value=""></td></tr>
-            <tr><td>成果ポイント①報酬_グロス</td><td><input type="text" name="example_input" value=""></td></tr>
-            <tr><td>成果ポイント②報酬_グロス</td><td><input type="text" name="example_input" value=""></td></tr>
-            <tr><td>成果ポイント①報酬_ネット</td><td><input type="text" name="example_input" value=""></td></tr>
-            <tr><td>成果ポイント②報酬_ネット</td><td><input type="text" name="example_input" value=""></td></tr>
-            <tr><td>レギュレーション</td><td><input type="text" name="example_input" value=""></td></tr>
-            <tr><td>広告紹介</td><td><input type="text" name="example_input" value=""></td></tr>
-            <tr><td>クリエイティブ</td><td><button type="button" class="btn btn-success">アップロード</button></td></tr>
-            <tr><td>コラボ画像の使用</td><td><select name="example_input"><option value="">不可</option><option value="">可</option></select></td></tr>
+            <tr><td><?php echo __('ads.label.result_multi'); ?></td><td><select name="example_input"><option value="">不可</option><option value="">可</option></select></td></tr>
+            <tr>
+                <td><?php echo __('ads.label.ad_category'); ?></td>
+                <td>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        adminで登録したカテゴリを選択
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr><td><?php echo __('ads.label.result_point_upper1'); ?></td><td><input type="text" name="example_input" value=""></td></tr>
+            <tr><td><?php echo __('ads.label.result_point_upper2'); ?></td><td><input type="text" name="example_input" value=""></td></tr>
+            <tr><td><?php echo __('ads.label.result_point_reward1'); ?></td><td><input type="text" name="example_input" value=""></td></tr>
+            <tr><td><?php echo __('ads.label.result_point_reward2'); ?></td><td><input type="text" name="example_input" value=""></td></tr>
+            <tr><td><?php echo __('ads.label.result_point_amount1'); ?></td><td><input type="text" name="example_input" value=""></td></tr>
+            <tr><td><?php echo __('ads.label.result_point_amount2'); ?></td><td><input type="text" name="example_input" value=""></td></tr>
+            <tr><td><?php echo __('ads.label.reguration'); ?></td><td><input type="text" name="example_input" value=""></td></tr>
+            <tr><td><?php echo __('ads.label.ad_introduction'); ?></td><td><input type="text" name="example_input" value=""></td></tr>
+            <tr><td><?php echo __('ads.label.creative'); ?></td><td><button type="button" class="btn btn-success">アップロード</button></td></tr>
+            <tr><td><?php echo __('ads.label.collabo_image'); ?></td><td><select name="example_input"><option value="">不可</option><option value="">可</option></select></td></tr>
         </table>
         <div class="form-group">
             <button class="btn btn-primary" name="submit">保存</button>
