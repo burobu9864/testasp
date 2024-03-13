@@ -44,6 +44,12 @@ return array(
             'bank'              => '金融機関登録',
             'receive_notice'    => '新規広告のお知らせ',
         ),
+        'select' => array(
+            'receive_notice' => array(
+                'receive'       => '受け取る',
+                'unreceive'     => '受け取らない',
+            ),
+        ),
     ),
 
     'ads' => array(
@@ -77,6 +83,37 @@ return array(
             'creative'            => 'クリエイティブ',
             'collabo_image'       => 'コラボ画像の使用',
         ),
+        'select' => array(
+            'status' => array(
+                'on'            => 'ON',
+                'off'           => 'OFF',
+            ),
+            'device' => array(
+                'sp'            => 'SP',
+                'pc'            => 'PC',
+                'sppc'          => 'SPPC',
+            ),
+            'partner_approval' => array(
+                'auto'          => '自動',
+                'manual'        => '手動',
+            ),
+            'result_approval' => array(
+                'auto'          => '自動',
+                'manual'        => '手動',
+            ),
+            'referrer' => array(
+                'invalid'       => '無効',
+                'collect'       => '収集',
+            ),
+            'result_multi' => array(
+                'impossible'     => '不可',
+                'possible'       => '可',
+            ),
+            'collabo_image' => array(
+                'impossible'     => '不可',
+                'possible'       => '可',
+            ),
+        ),
     ),
 
     'sites' => array(
@@ -91,5 +128,26 @@ return array(
             'postback_variable' => 'ポストバック変数名',
             'postback_url'      => 'ポストバックURL',
         ),
+        'select' => array(
+            'site_attr' => array(
+                'sns'               => 'SNS',
+                'website'           => 'ウェブサイト',
+            ),
+            'sns' => array(
+                'x'                 => 'X',
+                'instagram'         => 'Instagram',
+                'facebook'          => 'Facebook',
+                'tiktok'            => 'TikTok',
+                'youtube'           => 'Youtube',
+                'niconico'          => 'ニコニコ動画',
+                'others'            => 'その他',
+            ),
+        ),
+        'checkbox' => array(
+            'category' => array(
+                'box1'              => 'テスト1',
+                'box2'              => 'テスト2',
+            ),
+        )
     ),
 );
