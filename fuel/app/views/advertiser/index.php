@@ -17,9 +17,8 @@
                 <?php echo View::forge('advertiser/regist/index', ['account' => $account]); ?>
             </div>
         </div>
+        <?php echo View::forge('advertiser/footer'); ?>
     </div>
-
-    <?php echo View::forge('advertiser/footer'); ?>
 </body>
 
 </html>

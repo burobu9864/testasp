@@ -29,6 +29,11 @@ return array(
             'tel'               => '電話番号',
             'our_staff'         => '営業スタッフ',
         ),
+        'help' => array(
+            'post_code'         => '* 例）112-3333',
+            'address'           => '* 例）東京都千代田区1-1-1',
+            'tel'               => '* 例）03-1111-1111',
+        ),
     ),
 
     'medias' => array(
@@ -43,6 +48,12 @@ return array(
             'tel'               => '電話番号',
             'bank'              => '金融機関登録',
             'receive_notice'    => '新規広告のお知らせ',
+        ),
+        'help' => array(
+            'post_code'         => '* 例）112-3333',
+            'address'           => '* 例）東京都千代田区1-1-1',
+            'tel'               => '* 例）03-1111-1111',
+            'bank'              => '* 例）03-1111-1111',
         ),
         'select' => array(
             'receive_notice' => array(
@@ -82,6 +93,9 @@ return array(
             'ad_introduction'       => '広告紹介',
             'creative'            => 'クリエイティブ',
             'collabo_image'       => 'コラボ画像の使用',
+        ),
+        'help' => array(
+            'result_approval'     => '※『手動』の場合、60日の間に承認作業が行われないと成果は自動承認されます。',
         ),
         'select' => array(
             'status' => array(

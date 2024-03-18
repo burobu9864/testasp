@@ -17,27 +17,9 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-6">
-                                <label class="checkbox inline"><?= Form::checkbox('box1', '', false, ['class' => 'inline search-param']); ?> <?= __('sites.checkbox.category.box1') ?></label>
-                                <label class="checkbox inline"><?= Form::checkbox('box2', '', false, ['class' => 'inline search-param']); ?> <?= __('sites.checkbox.category.box2') ?></label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-6">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Default checkbox
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                        Checked checkbox
-                                    </label>
+                                    <label class="checkbox inline"><?= Form::checkbox('box1', '', false, ['class' => 'inline search-param']); ?> <?= __('sites.checkbox.category.box1') ?></label>
+                                    <label class="checkbox inline"><?= Form::checkbox('box2', '', false, ['class' => 'inline search-param']); ?> <?= __('sites.checkbox.category.box2') ?></label>
                                 </div>
                             </div>
                         </div>

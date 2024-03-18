@@ -64,7 +64,7 @@
             <tr><td><?= __('ads.label.deliver_url_sp'); ?></td><td><input type="text" name="example_input" value=""></td></tr>
             <tr><td><?= __('ads.label.deliver_term'); ?></td><td><input type="text" name="example_input" value="2024-01-01 00:00:00 ~ 2030-12-31-23:59:59"></td></tr>
             <tr><td><?= __('ads.label.partner_approval'); ?></td><td><?= Form::select('partner_approval', '', __('ads.select.partner_approval'), ['class' => 'where input-medium']); ?></td></tr>
-            <tr><td><?= __('ads.label.result_approval'); ?></td><td><?= Form::select('result_approval', '', __('ads.select.result_approval'), ['class' => 'where input-medium']); ?>※『手動』の場合、60日の間に承認作業が行われないと成果は自動承認されます。</td></tr>
+            <tr><td><?= __('ads.label.result_approval'); ?></td><td><?= Form::select('result_approval', '', __('ads.select.result_approval'), ['class' => 'where input-medium']); ?><?= __('ads.help.result_approval'); ?></td></tr>
             <tr><td><?= __('ads.label.ip_restrect'); ?></td><td><input type="text" name="example_input" value=""></td></tr>
             <tr><td><?= __('ads.label.referrer'); ?></td><td><select name="example_input"><option value="">無効</option><option value="">収集</option></select></td></tr>
             <tr>
