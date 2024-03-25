@@ -17,18 +17,8 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Default checkbox
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                        Checked checkbox
-                                    </label>
+                                    <label class="checkbox inline"><?= Form::checkbox('box1', '', false, ['class' => 'inline search-param']); ?> <?= __('sites.checkbox.category.box1') ?></label>
+                                    <label class="checkbox inline"><?= Form::checkbox('box2', '', false, ['class' => 'inline search-param']); ?> <?= __('sites.checkbox.category.box2') ?></label>
                                 </div>
                             </div>
                         </div>
@@ -42,18 +32,8 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Default checkbox
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                        Checked checkbox
-                                    </label>
+                                    <label class="checkbox inline"><?= Form::checkbox('box1', '', false, ['class' => 'inline search-param']); ?> <?= __('sites.checkbox.category.box1') ?></label>
+                                    <label class="checkbox inline"><?= Form::checkbox('box2', '', false, ['class' => 'inline search-param']); ?> <?= __('sites.checkbox.category.box2') ?></label>
                                 </div>
                             </div>
                         </div>
@@ -66,7 +46,7 @@
             <tr><td><?= __('ads.label.partner_approval'); ?></td><td><?= Form::select('partner_approval', '', __('ads.select.partner_approval'), ['class' => 'where input-medium']); ?></td></tr>
             <tr><td><?= __('ads.label.result_approval'); ?></td><td><?= Form::select('result_approval', '', __('ads.select.result_approval'), ['class' => 'where input-medium']); ?><?= __('ads.help.result_approval'); ?></td></tr>
             <tr><td><?= __('ads.label.ip_restrect'); ?></td><td><input type="text" name="example_input" value=""></td></tr>
-            <tr><td><?= __('ads.label.referrer'); ?></td><td><select name="example_input"><option value="">無効</option><option value="">収集</option></select></td></tr>
+            <tr><td><?= __('ads.label.referrer'); ?></td><td><?= Form::select('result_approval', '', __('ads.select.referrer'), ['class' => 'where input-medium']); ?></td></tr>
             <tr>
                 <td><?= __('ads.label.result_point1'); ?></td>
                 <td>

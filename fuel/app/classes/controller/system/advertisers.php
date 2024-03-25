@@ -9,13 +9,6 @@ class Controller_System_Advertisers extends Controller
         Lang::load('system');
     }
 
-    public function action_index()
-    {
-        
-        $data['account'] = Model_Account::find(1);
-        return Response::forge(View::forge('system/advertisers/list', $data));
-    }
-
     public function action_create()
     {
         

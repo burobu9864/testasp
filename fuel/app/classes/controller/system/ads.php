@@ -16,6 +16,14 @@ class Controller_System_Ads extends Controller
         return Response::forge(View::forge('system/ads/create', $data));
     }
 
+    public function action_save()
+    {
+        // フォームのデータを処理するコードをここに記述
+
+        // 保存が完了したら、リダイレクト
+        Response::redirect('http://localhost/testasp.com/system');
+    }
+
     public function action_edit()
     {
         
