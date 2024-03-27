@@ -11,7 +11,7 @@
                         <a class="btn btn-info csv" href="javascript:;"><i class="icon-download-alt tt" title="CSVダウンロード"></i> CSV</a>
                     </div>
                     <div class="btn-group">
-                        <a class="btn btn-success" href="system/advertisers/create">広告主の追加</a>
+                        <a class="btn btn-success" href="system/advertisers/create"><?= __('button.advertisers.create'); ?></a>
                     </div>
                 </div>
                 <?= View::forge('system/advertisers/list'); ?>
@@ -22,7 +22,7 @@
                         <a class="btn btn-info csv" href="javascript:;"><i class="icon-download-alt tt" title="CSVダウンロード"></i> CSV</a>
                     </div>
                     <div class="btn-group">
-                        <a class="btn btn-success" href="system/medias/create">メディアの追加</a>
+                        <a class="btn btn-success" href="system/medias/create"><?= __('button.medias.create'); ?></a>
                     </div>
                 </div>
                 <?= View::forge('system/medias/list'); ?>
@@ -33,7 +33,7 @@
                         <a class="btn btn-info csv" href="javascript:;"><i class="icon-download-alt tt" title="CSVダウンロード"></i> CSV</a>
                     </div>
                     <div class="btn-group">
-                        <a class="btn btn-success" href="system/ads/create">広告の追加</a>
+                        <a class="btn btn-success" href="system/ads/create"><?= __('button.ads.create'); ?></a>
                     </div>
                 </div>
                 <?= View::forge('system/ads/list'); ?>
@@ -44,7 +44,7 @@
                         <a class="btn btn-info csv" href="javascript:;"><i class="icon-download-alt tt" title="CSVダウンロード"></i> CSV</a>
                     </div>
                     <div class="btn-group">
-                        <a class="btn btn-success" href="system/sites/create">サイトの追加</a>
+                        <a class="btn btn-success" href="system/sites/create"><?= __('button.sites.create'); ?></a>
                     </div>
                 </div>
                 <?= View::forge('system/sites/list'); ?>

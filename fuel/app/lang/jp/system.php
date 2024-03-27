@@ -15,6 +15,20 @@ return array(
             'list' => 'サイト一覧',
         ),
     ),
+    'button' => array(
+        'advertisers' => array(
+            'create' => '広告主の追加',
+        ),
+        'medias' => array(
+            'create' => 'メディアの追加',
+        ),
+        'ads' => array(
+            'create' => '広告の追加',
+        ),
+        'sites' => array(
+            'create' => 'サイトの追加',
+        ),
+    ),
 
     'advertisers' => array(
         'label' => array(
