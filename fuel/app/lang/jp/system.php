@@ -128,6 +128,16 @@ return array(
                 'possible'       => '可',
             ),
         ),
+        'checkbox' => array(
+            'result_point1' => array(
+                'result_count'  => '成果件数',
+                'link_amount'   => '購入金額連動',
+                'click'         => 'クリック',
+            ),
+            'result_point2' => array(
+                'link_amount'   => '購入金額連動',
+            ),
+        ),
     ),
 
     'sites' => array(

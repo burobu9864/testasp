@@ -54,26 +54,9 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        成果件数
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                        購入金額連動
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                        クリック
-                                    </label>
+                                    <label class="checkbox inline"><?= Form::checkbox('box1', '', false, ['class' => 'inline search-param']); ?> <?= __('ads.checkbox.result_point1.result_count') ?></label>
+                                    <label class="checkbox inline"><?= Form::checkbox('box2', '', false, ['class' => 'inline search-param']); ?> <?= __('ads.checkbox.result_point1.link_amount') ?></label>
+                                    <label class="checkbox inline"><?= Form::checkbox('box2', '', false, ['class' => 'inline search-param']); ?> <?= __('ads.checkbox.result_point1.click') ?></label>
                                 </div>
                             </div>
                         </div>
@@ -87,10 +70,7 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        購入金額連動
-                                    </label>
+                                    <label class="checkbox inline"><?= Form::checkbox('box2', '', false, ['class' => 'inline search-param']); ?> <?= __('ads.checkbox.result_point2.link_amount') ?></label>
                                 </div>
                             </div>
                         </div>
